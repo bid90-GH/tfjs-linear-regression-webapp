@@ -1,2 +1,7 @@
-# tfjs-webapp
-Linear regression &amp; Binary classification with TensorFlow.js
+# tfjs-linear-regression-webapp
+Linear regression with TensorFlow.js
+
+```node
+npm install
+npm run dev
+npm run start

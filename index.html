@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linear regression with TensorFlow.js</title>
+    <link href="" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="d-flex p-3 bg-light justify-content-end" style="border-bottom: 2px solid cornflowerblue">
+    <button class="btn btn-primary" id="bt_visor">Visor</button>
+</div>
+<div class="container">
+    <div class="row" style="padding: 20px">
+
+        <div class="d-flex justify-content-center">
+            <h3 style="color: cornflowerblue">Linear regression with TensorFlow.js</h3>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h6>Train a model to predict house price from living space.</h6>
+        </div>
+    </div>
+    <div class="row" style="padding: 20px">
+        <div class="col-sm">
+
+
+        </div>
+    </div>
+    <div class="row" style="padding: 20px">
+        <div class="col-sm">
+            <div class="mb-3">
+                <h3 style="color: cornflowerblue">Train & Test</h3>
+            </div>
+            <div class="mb-3">
+                <label for="trainingStatus" class="form-label">Training Status:</label>
+                <textarea class="form-control" id="trainingStatus" disabled rows="4">No model trained</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="testingStatus" class="form-label">Testing Status:</label>
+                <textarea class="form-control" id="testingStatus" disabled>No model testing</textarea>
+            </div>
+            <!-- Buttons -->
+            <div class="mb-3">
+                <div>
+                    <button class="btn btn-primary" id="bt_train" disabled>Train new model</button>
+                    <button class="btn btn-secondary" id="bt_test" disabled>Test model</button>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <button class="btn btn-primary btn-sm" id="bt_load" >Load model</button>
+                    <button class="btn btn-secondary btn-sm" id="bt_save" disabled>Save model</button>
+                </div>
+            </div>
+            <!-- Buttons end -->
+        </div>
+        <div class="col-sm">
+            <div class="mb-3">
+                <h3 style="color: cornflowerblue">Predict</h3>
+            </div>
+            <div class="mb-3">
+                <label for="squareFeet" class="form-label">Square feet for living space:</label>
+                <input type="test" class="form-control" id="squareFeet" value="2000">
+            </div>
+            <!-- Buttons -->
+            <div class="mb-3">
+                <div>
+                    <button class="btn btn-primary" id="bt_predict" disabled>Predict house price</button>
+                </div>
+            </div>
+            <!-- Buttons End -->
+            <div class="mb-3" id="returnStatus">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
