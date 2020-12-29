@@ -1,5 +1,5 @@
 {
-  "name": "linear-regression-tfjs",
+  "name": "tfjs-linear-regression-webapp",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
